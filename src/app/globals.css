@@ -1,0 +1,77 @@
+@import "../styles/theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: rgb(var(--color-paper));
+  color: rgb(var(--color-ink));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sans);
+}
+
+/*
+  Selection highlight reads against the paper. A low-alpha accent gives a
+  ruby wash without making body text hard to read.
+*/
+::selection {
+  background: rgb(var(--color-accent) / 0.18);
+  color: rgb(var(--color-ink));
+}
+
+/* Hairline divider used between sections */
+.hairline {
+  height: 1px;
+  background-color: rgb(var(--color-ink));
+  opacity: 0.12;
+}
+
+/* Eyebrow / label styles */
+.eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgb(var(--color-ink-muted));
+}
+
+/*
+  Subtle hover underline for inline links.
+
+  The underline is drawn with a `linear-gradient` background-image that
+  scales from 0% → 100% on hover. `currentColor` means the underline always
+  matches the text colour, so when the link colour shifts to accent on
+  hover, the underline shifts too (free of charge).
+
+  `box-decoration-break: clone` is what makes the underline draw on every
+  wrapped line of a multi-line link, not just the last one.
+*/
+.link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: left 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding-bottom: 2px;
+  transition: background-size 250ms ease, color 150ms ease;
+}
+.link:hover {
+  background-size: 100% 1px;
+  color: rgb(var(--color-accent));
+}
+
+/*
+  Body-prose links (rendered by react-markdown without the `.link` class)
+  also pick up the accent on hover, so the inline-link UX is consistent
+  whether the link sits in a header, a markdown post body, or a CV row.
+*/
+.prose a:hover {
+  color: rgb(var(--color-accent));
+}

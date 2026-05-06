@@ -1,0 +1,101 @@
+/*
+  ─────────────────────────────────────────────────────────────────────────────
+  THEME — single source of truth for the site's colors and type stack.
+  ─────────────────────────────────────────────────────────────────────────────
+
+  Edit values in this file and the whole site updates. Tailwind utility
+  classes like `text-ink`, `bg-paper-warm`, `text-accent`, `border-ink/10`
+  all resolve through these variables, so changing a hue once paints every
+  page consistently.
+
+  Notes:
+    - Color values are written as **space-separated R G B triplets** (no
+      commas, no `rgb()` wrapper). This is what Tailwind 3 needs to mix in
+      the alpha for utilities like `text-ink/40` or `bg-accent/15`.
+    - To get an R G B triplet from a hex value: open a color picker, type
+      the hex, and copy the RGB numbers separated by spaces. (E.g. `#A4193D`
+      → `164 25 61`.)
+    - Try-on alternatives are listed in comments next to each block — just
+      uncomment one and reload the page to see it.
+*/
+
+:root {
+  /* ── Type ─────────────────────────────────────────────────────────────── */
+  /*
+    The two font stacks the whole site reads from. The first family in each
+    stack is the "primary" face — the rest are graceful fallbacks while the
+    web font is loading or if it fails to load.
+
+    To change a font:
+      1. Edit the family name(s) below.
+      2. Edit the Google Fonts URL in `src/app/layout.tsx` so the new family
+         is actually fetched. (Or remove the URL entirely if you switch to
+         system fonts.)
+  */
+  --font-sans:
+    "Inter", "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-serif:
+    "EB Garamond", "Noto Serif KR", Georgia, "Times New Roman", serif;
+
+  /* ── Ink (foreground / text) ──────────────────────────────────────────── */
+  /* Headings, body text, and progressively lighter shades for muted UI. */
+  --color-ink: 17 17 17;          /* primary text · #111111 */
+  --color-ink-soft: 42 42 42;     /* body prose      · #2a2a2a */
+  --color-ink-muted: 107 107 107; /* eyebrow labels  · #6b6b6b */
+  --color-ink-faint: 168 168 168; /* dividers, hints · #a8a8a8 */
+
+  /*
+    Try-on: warmer ink (closer to a printed black, not pure carbon).
+    Uncomment the block to swap in.
+
+    --color-ink: 24 22 20;
+    --color-ink-soft: 48 44 40;
+    --color-ink-muted: 112 105 95;
+    --color-ink-faint: 176 168 156;
+  */
+
+  /* ── Paper (background) ───────────────────────────────────────────────── */
+  --color-paper: 250 250 247;     /* page background · #fafaf7 */
+  --color-paper-warm: 243 241 234;/* cards / hover    · #f3f1ea */
+
+  /*
+    Try-on: creamier paper (less starch, more book-page).
+    --color-paper: 249 244 234;
+    --color-paper-warm: 240 233 218;
+
+    Try-on: cool grey (more "design studio").
+    --color-paper: 246 247 247;
+    --color-paper-warm: 233 235 235;
+  */
+
+  /* ── Accent ───────────────────────────────────────────────────────────── */
+  /*
+    Used in *small* doses — about 1–2% of the visual area:
+      • the slide-in underline that appears under inline links on hover
+      • the active page indicator in the top nav
+      • the active number on pagination controls
+      • the highlighted entry in the post / project sidebar
+      • the left border of <blockquote>s in posts
+      • the text-selection highlight
+
+    Default is ruby. Swap freely (uncomment exactly one):
+      --color-accent: 164 25 61;     -- ruby (default)         #a4193d
+      --color-accent: 134 28 50;     -- oxblood                #861c32
+      --color-accent: 200 64 88;     -- bright rose            #c84058
+      --color-accent:  24 90 170;    -- ink blue               #185aaa
+      --color-accent:  16 80 64;     -- forest green           #105040
+      --color-accent: 156 92 22;     -- ochre / mustard        #9c5c16
+      --color-accent:  60 60 60;     -- (turn the accent off)  #3c3c3c
+  */
+  --color-accent: 164 25 61;
+  --color-accent-soft: 200 64 88;
+
+  /* ── Misc ─────────────────────────────────────────────────────────────── */
+  /*
+    `--theme-color` is what the browser address bar / iOS status bar tints
+    to. Defaults to the paper colour. Pick a value the OS will look good
+    under your accent if you ever want a more dramatic "branded" feel.
+  */
+  --theme-color: rgb(var(--color-paper));
+}
