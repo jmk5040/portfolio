@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Mankeun Jeong, a multidisciplinary artist working across visual, digital, and time-based media.",
   authors: [{ name: "Mankeun Jeong" }],
+  metadataBase: new URL("https://mankeunjeong.com"),
   openGraph: {
     title: "Mankeun Jeong — Artist",
     description:
