@@ -5,7 +5,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mankeun Jeong — Artist",
+  title: "Mankeun Jeong",
   description:
     "Portfolio of Mankeun Jeong, a multidisciplinary artist working across visual, digital, and time-based media.",
   authors: [{ name: "Mankeun Jeong" }],
