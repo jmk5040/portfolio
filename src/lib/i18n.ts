@@ -113,6 +113,7 @@ export type Dictionary = {
     tagsLabel: string;
     commentsHeading: string;
     commentsDisabledNote: string;
+    commentsManageOnGitHub: string;
     onlyInEnglishNote: string;
     onlyInKoreanNote: string;
     allPostsLabel: string;
@@ -318,6 +319,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       commentsHeading: "Comments",
       commentsDisabledNote:
         "Comments are not configured. See the README to enable Giscus.",
+      commentsManageOnGitHub: "Manage on GitHub",
       onlyInEnglishNote: "This post is only available in English.",
       onlyInKoreanNote: "This post is only available in Korean.",
       allPostsLabel: "Posts",
@@ -517,6 +519,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       tagsLabel: "태그",
       commentsHeading: "댓글",
       commentsDisabledNote: "댓글이 설정되어 있지 않습니다. README에서 Giscus 설정 방법을 확인해 주세요.",
+      commentsManageOnGitHub: "GitHub에서 관리",
       onlyInEnglishNote: "이 글은 영어로만 제공됩니다.",
       onlyInKoreanNote: "이 글은 한국어로만 제공됩니다.",
       allPostsLabel: "포스트",
