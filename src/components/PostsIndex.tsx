@@ -139,7 +139,9 @@ export function PostsIndex({ pairs, tags }: PostsIndexProps) {
                     aria-pressed={active}
                     className={
                       "uppercase tracking-widest transition-colors " +
-                      (active ? "text-ink" : "text-ink-muted hover:text-ink")
+                      (active
+                        ? "text-accent underline underline-offset-4"
+                        : "text-ink-muted hover:text-ink")
                     }
                   >
                     #{tag}
