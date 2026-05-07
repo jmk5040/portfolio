@@ -268,6 +268,52 @@ Files under `public/` are served at the root of the site, so a file at
 `/posts/notes-on-looking-slowly/01.jpg`. Files under `content/` are not
 served to the browser, so images must live in `public/`.
 
+#### Adding a video to a post
+
+Use the same `![alt](path "Caption")` syntax — the renderer detects the file
+extension and swaps in a `<video controls>` element instead of an image:
+
+```markdown
+![A short clip from the studio](/posts/staring-fire-chicken/clip.mp4 "egoecoecoecho, 2021")
+```
+
+Recognised extensions: `.mp4`, `.mov`, `.webm`, `.ogv`, `.m4v`. **`.mp4`
+(H.264 video, AAC audio) is the safest cross-browser choice.** `.mov` files
+play in Safari and most Chromium browsers if they're H.264-encoded, but
+Firefox can be picky — re-encode to `.mp4` with QuickTime → File → Export As,
+or with `ffmpeg -i in.mov -c:v libx264 -c:a aac out.mp4`, if a video doesn't
+play.
+
+Keep video files modest in size (a few MB is ideal, under 50 MB is fine).
+Vercel will happily serve larger files but the page becomes slow to load.
+For long videos, prefer YouTube or Vimeo and embed the link as a normal
+external URL.
+
+#### Attaching a PDF (or other file) to a post
+
+Two ways, pick what fits:
+
+**Inline preview** — same `![alt](path "Caption")` syntax, pointing at a
+`.pdf` file. The renderer shows a tall PDF preview frame with a small
+"Open PDF ↗" link in the caption that opens the file full-screen in a new
+tab:
+
+```markdown
+![Summary handout](/posts/the-wasteland/Summary-the-Wasteland.pdf "The Wasteland — chapter summary")
+```
+
+**Plain download / view link** — a regular markdown link. PDFs and other
+attachment types (`.zip`, `.docx`, `.xlsx`, `.pptx`, `.csv`, `.txt`, …)
+automatically open in a new tab so the visitor doesn't lose your site:
+
+```markdown
+You can [download the full handout](/posts/the-wasteland/Summary-the-Wasteland.pdf) here.
+```
+
+The same conventions work inside project markdown files under
+`content/works/`. Asset folders mirror the slug, e.g.
+`public/works/<slug>/figure1.jpg`.
+
 #### Adding a Korean version of an existing post
 
 1. Find the file you want to translate, e.g. `content/posts/notes-on-looking-slowly.en.md`.

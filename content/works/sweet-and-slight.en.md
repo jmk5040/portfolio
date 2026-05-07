@@ -27,5 +27,5 @@ Carl Sagan, the author of Cosmos, left us with the phrase, "We are made of star-
 
 Now, let us return to the beginning. The reason humans know about the origins of stars and matter is essentially because stars shine, and humans cannot ignore them. Therefore, arriving at our own identity as circulating matter and energy is also an inevitability brought about by the shining of stars. How should we treat this astonishing flow? Furthermore, how should we accept our dying bodies? We have no other choice but to simply accept it.
 
-![Performance Scenary](/works/sweet-and-slight/figure2.jpg)
+![Performance Scenary](/works/sweet-and-slight/figure2.png)
 
