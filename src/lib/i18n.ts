@@ -211,13 +211,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           period: "2023",
           school: "The Blind Watchmaker (눈 먼 시계공)",
-          detail: "Group exhibition. SAPY (Youth Art Center), Seoul.",
+          detail: "Group exhibition/Participating Artist. SAPY (Youth Art Center), Seoul.",
         },
         {
           period: "2021",
           school: "Project Hashtag 2021 – The Duck Among Us",
           detail:
-            "Group exhibition. National Museum of Modern and Contemporary Art, Seoul.",
+            "Group exhibition/Participating Artist. National Museum of Modern and Contemporary Art, Seoul.",
         },
       ],
       downloadHeading: "Full résumé",
@@ -413,12 +413,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           period: "2023",
           school: "눈 먼 시계공 (The Blind Watchmaker)",
-          detail: "단체전. 청년 예술청 SAPY, 서울.",
+          detail: "단체전/참여 작가. 청년 예술청 SAPY, 서울.",
         },
         {
           period: "2021",
           school: "Project Hashtag 2021 – The Duck Among Us",
-          detail: "단체전. 국립현대미술관, 서울.",
+          detail: "단체전/참여 작가. 국립현대미술관, 서울.",
         },
       ],
       downloadHeading: "전체 약력",
