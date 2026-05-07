@@ -264,7 +264,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       eyebrow: "Contact",
       heading: "Get in touch",
       intro:
-        "For exhibitions, residencies, studio visits, and writing — please reach out by email. I try to reply within a week or two.",
+        "Please reach out by email. I try to reply within a week or two.",
       emailLabel: "Email",
       email: "jmk5040@gmail.com",
       locationLabel: "Studio",
@@ -294,7 +294,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       ],
       pressNoteHeading: "Press & inquiries",
       pressNoteBody:
-        "For exhibitions, residencies, and press inquiries, please write to jmk5040@gmail.com with as much context as you can comfortably share. Image and text loans are handled on a case-by-case basis.",
+        "Please write to jmk5040@gmail.com with as much context as you can comfortably share.",
     },
     postsPage: {
       eyebrow: "Posts",
@@ -465,7 +465,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       eyebrow: "연락",
       heading: "연락처",
       intro:
-        "전시, 레지던시, 작업실 방문, 기고 등 모든 문의는 이메일로 연락해 주세요. 보통 1–2주 이내에 답신을 드립니다.",
+        "모든 문의는 이메일로 연락해 주세요. 보통 1–2주 이내에 답신을 드립니다.",
       emailLabel: "이메일",
       email: "jmk5040@gmail.com",
       locationLabel: "작업실",
@@ -495,7 +495,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       ],
       pressNoteHeading: "보도 및 문의",
       pressNoteBody:
-        "전시, 레지던시, 보도 관련 문의는 jmk5040@gmail.com 으로 가능한 한 자세한 맥락과 함께 보내 주세요. 이미지·텍스트 대여는 사안별로 검토하여 답신드립니다.",
+        "문의는 jmk5040@gmail.com 으로 보내 주세요.",
     },
     postsPage: {
       eyebrow: "포스트",
