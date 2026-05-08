@@ -186,8 +186,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       grantsHeading: "Grants",
       grants: [
         {
+          period: "2022",
+          school: "Baekwun Scholarship",
+          detail: "Foundation for Baekwun Scholarship.",
+        },
+        {
           period: "2021",
-          school: "Teaching & Research Assistantship Scholarship",
+          school: "Graduate Student Instructor Scholarship (GSI)",
           detail: "Seoul National University.",
         },
         {
@@ -195,6 +200,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           school:
             "Next Generation Academic Scholarship (학문후속세대, NRF)",
           detail: "National Research Foundation of Korea.",
+        },
+        {
+          period: "2016",
+          school: "Kim Tae Young Scholarship",
+          detail: "Seoul National University Amateur Astronomy Association (AAA).",
         },
       ],
       awardsHeading: "Awards",
@@ -395,14 +405,24 @@ export const dictionaries: Record<Locale, Dictionary> = {
       grantsHeading: "장학금",
       grants: [
         {
+          period: "2022",
+          school: "백운 장학금",
+          detail: "재단 법인 백운장학회.",
+        },
+        {
           period: "2021",
-          school: "교수학습조교 장학금 (Teaching & Research Assistantship)",
+          school: "강의연구지원 장학금 (GSI)",
           detail: "서울대학교.",
         },
         {
           period: "2020",
           school: "학문후속세대 장학금",
           detail: "한국연구재단.",
+        },
+        {
+          period: "2016",
+          school: "김태영 장학금",
+          detail: "서울대학교 아마추어 천문회 (AAA).",
         },
       ],
       awardsHeading: "수상",
