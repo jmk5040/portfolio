@@ -214,6 +214,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           detail: "Group exhibition/Participating Artist. SAPY (Youth Art Center), Seoul.",
         },
         {
+          period: "2022",
+          school: "Delivery Dancer’s Sphere (딜리버리 댄서의 구)",
+          detail: "Ayoung Kim Solo exhibition/Physics Advisory. Gallery Hyundai, Seoul.",
+        },
+        {
           period: "2021",
           school: "Project Hashtag 2021 – The Duck Among Us",
           detail:
@@ -414,6 +419,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           period: "2023",
           school: "눈 먼 시계공 (The Blind Watchmaker)",
           detail: "단체전/참여 작가. 청년 예술청 SAPY, 서울.",
+        },
+        {
+          period: "2022",
+          school: "딜리버리 댄서의 구 (Delivery Dancer’s Sphere)",
+          detail: "김아영 개인전/물리학 자문. 갤러리 현대, 서울.",
         },
         {
           period: "2021",
